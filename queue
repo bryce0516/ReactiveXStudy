@@ -1,0 +1,26 @@
+### main queue
+DispathQueue.main.async{}
+메인쓰레드
+
+### global queue
+- Concurrent(동시) : 여러개의 쓰레드로 분산 처리 함
+
+Dispatch.Queue.global(qos: .userInteractive)
+유저와 직접적 인터렉티브 UI 업데이트 애니메이션 UI 반응 관련
+
+Dispatch.Queue.global(qos: .userInitiated)
+유저가 즉시 필요하긴 하지만 비동기적으로 처리된 작업 몇초
+
+Dispatch.Queue.global()
+일반적인 작업
+
+Dispatch.Queue.global(qos: .utility)
+인데케이터와 함께 길게 실행되는 작업, 계산, IO, Networking 지속적인 feeds
+
+Dispatch.Queue.global(qos: .unspecified)
+legacy API
+
+- 우선 순위가 더 높은 큐의 작업을 우선적으로 더 많은 쓰레드에 배치하고 배터리를 집중적으로 소모하게 된다.
+
+### Private Queue
+- 디폴트 Serial, Concurrent로 설정가능
