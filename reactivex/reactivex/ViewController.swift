@@ -43,7 +43,7 @@ class ViewController: UIViewController {
   }
   
   @IBAction func onCancel(_ sender: Any) {
-    
+    let _ = Demo()
   }
   
   func rxswiftLoadImage(from imageUrl: String) -> Observable<UIImage?> {
