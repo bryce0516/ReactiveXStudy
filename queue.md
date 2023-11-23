@@ -1,6 +1,6 @@
 ### GCD / Operation
 - 큐를 이용해 분산 처리
-- GCD/ operation을 사용해 쓰레드 숫자를 관리
+- GCD / operation을 사용해 쓰레드 숫자를 관리
 - 직접 쓰레드를 생성하지 않고 작업 분산에 따른 쓰레드를 관리
   
 - GCD - Grand Central Dispatch
